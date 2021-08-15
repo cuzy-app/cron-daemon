@@ -1,0 +1,20 @@
+{
+    "id": "cron-daemon",
+    "name": "Cron Daemon",
+    "description": "Cron daemon to execute cron jobs from an external cron service via an URL",
+    "keywords": [],
+    "version": "0.1",
+    "humhub": {
+        "minVersion": "1.6"
+    },
+    "homepage": "https://cuzy.app",
+    "authors": [
+        {
+            "name": "Marc FARRE",
+            "homepage": "https://marc.fun",
+            "role": "Developer"
+        }
+    ],
+    "screenshots": [
+    ]
+}
