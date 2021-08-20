@@ -7,7 +7,7 @@ If you use this module, please indicate if it works well for you on https://gith
 
 ## Usage
 
-To execute the queued jobs, call the URL `https://my-humhub.tdl/cron-daemon/external-service/run-queue` (replace my-humhub.tdl) every minute by an external cron service such as https://cron-job.org/en/.
+To execute the queued jobs, call the URL `https://my-humhub.tdl/cron-daemon/external-service/run-queue` (replace my-humhub.tdl) every minute by an external cron service such as [https://cron-job.org](https://cron-job.org/).
 
 And execute the hourly and daily cron jobs as frequently as possible (at least every hour) on your server cron panel by adding this command:
 `/usr/bin/php /path/to/humhub/protected/yii cron/run >/dev/null 2>&1`

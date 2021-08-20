@@ -9,7 +9,7 @@
 namespace humhub\modules\cronDaemon\controllers;
 
 use yii\queue\db\Queue;
-use yii\rest\Controller;
+use humhub\components\Controller;
 
 
 class ExternalServiceController extends Controller
