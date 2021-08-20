@@ -8,28 +8,13 @@
 
 namespace humhub\modules\cronDaemon\controllers;
 
-use humhub\components\access\ControllerAccess;
 use Yii;
 use yii\queue\db\Queue;
-use humhub\components\Controller;
+use yii\rest\Controller;
 
 
 class ExternalServiceController extends Controller
 {
-    public static $moduleId = '';
-
-    /**
-     * @inheritdoc
-     */
-    public $enableCsrfValidation = false;
-
-    /**
-     * @inerhitdoc
-     * Do not enforce authentication.
-     */
-    public $access = ControllerAccess::class;
-
-
     /**
      * @return array
      */
