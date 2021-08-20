@@ -3,7 +3,7 @@
     "name": "Cron Daemon",
     "description": "Cron daemon to execute cron jobs from an external cron service via an URL",
     "keywords": [],
-    "version": "0.1",
+    "version": "0.2",
     "humhub": {
         "minVersion": "1.6"
     },
