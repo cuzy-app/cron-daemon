@@ -17,6 +17,7 @@ class ExternalServiceController extends Controller
     public function actionRunQueue()
     {
         $queue = new Queue();
-        $queue->run(0);
+        $exitCode = $queue->run(0);
+        return ($exitCode === null) ? $this->returnSuccess('Queue executed') : $exitCode;
     }
 }
