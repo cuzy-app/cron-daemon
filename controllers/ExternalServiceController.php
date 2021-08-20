@@ -8,6 +8,7 @@
 
 namespace humhub\modules\cronDaemon\controllers;
 
+use humhub\components\access\ControllerAccess;
 use Yii;
 use yii\queue\db\Queue;
 use humhub\components\Controller;
@@ -15,13 +16,28 @@ use humhub\components\Controller;
 
 class ExternalServiceController extends Controller
 {
+
+    /**
+     * @inheritdoc
+     */
+    public $enableCsrfValidation = false;
+
+    /**
+     * @inerhitdoc
+     * Do not enforce authentication.
+     */
+    public $access = ControllerAccess::class;
+
+
+    /**
+     * @return array
+     */
     public function actionRunQueue()
     {
         $queue = new Queue();
         $exitCode = $queue->run(0);
         return ($exitCode === null) ? $this->returnSuccess('Queue executed') : $this->returnError(500, 'Queue not executed. Error code: '.$exitCode);
     }
-
 
 
     /**
