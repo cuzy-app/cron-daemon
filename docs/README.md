@@ -11,3 +11,5 @@ To execute the queued jobs, call the URL `https://my-humhub.tdl/cron-daemon/exte
 
 And execute the hourly and daily cron jobs as frequently as possible (at least every hour) on your server cron panel by adding this command:
 `/usr/bin/php /path/to/humhub/protected/yii cron/run >/dev/null 2>&1`
+
+If not possible to execute commands on the cron panel, call the URL `https://my-humhub.tdl/cron-daemon/external-service/run-cron`

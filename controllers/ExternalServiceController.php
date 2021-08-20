@@ -23,7 +23,7 @@ class ExternalServiceController extends Controller
     {
         $queue = new Queue();
         $exitCode = $queue->run(0);
-        return !$exitCode ? $this->returnSuccess('Queue executed') : $this->returnError(500, 'Queue not executed. Exit code: '.$exitCode);
+        return !$exitCode ? $this->returnSuccess('Queue executed successfully!') : $this->returnError(500, 'Error on queue execution. Exit code: '.$exitCode);
     }
 
 
@@ -34,7 +34,7 @@ class ExternalServiceController extends Controller
     {
         $cronController = new CronController($this->id, $this->module);
         $exitCode = $cronController->actionRun();
-        return !$exitCode ? $this->returnSuccess('Cron jobs executed') : $this->returnError(500, 'Cron jobs not executed. Exit code: '.$exitCode);
+        return !$exitCode ? $this->returnSuccess('Daily/hourly cron jobs executed successfully!') : $this->returnError(500, 'Error on daily/hourly cron jobs execution. Exit code: '.$exitCode);
     }
 
 
