@@ -8,6 +8,7 @@
 
 namespace humhub\modules\cronDaemon\controllers;
 
+use humhub\commands\CronController;
 use Yii;
 use yii\queue\db\Queue;
 use yii\rest\Controller;
@@ -22,7 +23,17 @@ class ExternalServiceController extends Controller
     {
         $queue = new Queue();
         $exitCode = $queue->run(0);
-        return ($exitCode === null) ? $this->returnSuccess('Queue executed') : $this->returnError(500, 'Queue not executed. Error code: '.$exitCode);
+        return !$exitCode ? $this->returnSuccess('Queue executed') : $this->returnError(500, 'Queue not executed. Exit code: '.$exitCode);
+    }
+
+
+    /**
+     * @return array
+     */
+    public function actionRunCron()
+    {
+        $exitCode = (new CronController($this->id, $this->module))->actionRun();
+        return !$exitCode ? $this->returnSuccess('Cron jobs executed') : $this->returnError(500, 'Cron jobs not executed. Exit code: '.$exitCode);
     }
 
 
