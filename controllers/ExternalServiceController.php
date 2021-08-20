@@ -32,7 +32,8 @@ class ExternalServiceController extends Controller
      */
     public function actionRunCron()
     {
-        $exitCode = (new CronController($this->id, $this->module))->actionRun();
+        $cronController = new CronController($this->id, $this->module);
+        $exitCode = $cronController->actionRun();
         return !$exitCode ? $this->returnSuccess('Cron jobs executed') : $this->returnError(500, 'Cron jobs not executed. Exit code: '.$exitCode);
     }
 
