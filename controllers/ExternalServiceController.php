@@ -16,6 +16,7 @@ use humhub\components\Controller;
 
 class ExternalServiceController extends Controller
 {
+    public static $moduleId = '';
 
     /**
      * @inheritdoc
