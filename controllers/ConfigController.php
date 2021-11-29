@@ -6,12 +6,18 @@
  * @author [Marc FARRE](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
  */
 
-/** @noinspection MissedFieldInspection */
-return [
-    'id' => 'cron-daemon',
-    'class' => humhub\modules\cronDaemon\Module::class,
-    'namespace' => 'humhub\modules\cronDaemon',
-    'events' => [
-    ],
-];
-?>
+namespace humhub\modules\cronDaemon\controllers;
+
+use humhub\modules\admin\components\Controller;
+
+
+class ConfigController extends Controller
+{
+    /**
+     * @return mixed
+     */
+    public function actionIndex()
+    {
+        return $this->render('index');
+    }
+}

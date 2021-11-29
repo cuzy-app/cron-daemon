@@ -1,13 +1,13 @@
 {
     "id": "cron-daemon",
     "name": "Cron Daemon",
-    "description": "Cron daemon to execute cron jobs from an external cron service via an URL",
+    "description": "Executes cron jobs from an external cron service via a URL",
     "keywords": [],
-    "version": "0.2",
+    "version": "1.0",
     "humhub": {
         "minVersion": "1.6"
     },
-    "homepage": "https://cuzy.app",
+    "homepage": "https://github.com/cuzy-app/humhub-modules-cron-daemon",
     "authors": [
         {
             "name": "Marc FARRE",
