@@ -32,6 +32,11 @@ class ExternalServiceController extends Controller
      */
     public function actionRunCron()
     {
+        // fix missing constants for non-cli php versions (like php-fpm)
+        if (!defined('STDERR')) define('STDERR', fopen('php://stderr', 'wb'));
+        if (!defined('STDIN')) define('STDIN', fopen('php://stdin', 'rb'));
+        if (!defined('STDOUT')) define('STDOUT', fopen('php://stdout', 'wb'));
+
         $cronController = new CronController($this->id, $this->module);
         $exitCode = $cronController->actionRun();
         return !$exitCode ? $this->returnSuccess('Daily/hourly cron jobs executed successfully!') : $this->returnError(500, 'Error on daily/hourly cron jobs execution. Exit code: '.$exitCode);
