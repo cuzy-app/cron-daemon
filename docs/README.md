@@ -7,9 +7,7 @@ Work around the problem of queued jobs executed by cron on managed shared server
 
 ## Usage
 
-To execute the queued jobs, call the following URLs every minute by an external cron service such as [https://cron-job.org](https://cron-job.org/) (replace my-humhub.tdl):
-- `https://my-humhub.tdl/cron-daemon/external-service/run-queue`
-- `https://my-humhub.tdl/cron-daemon/external-service/run-cron`
+Once the module is installed, go to `Administration -> Modules -> Cron Daemon -> Configure`.
 
 
 ## Repository

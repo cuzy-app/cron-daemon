@@ -2,8 +2,8 @@
     "id": "cron-daemon",
     "name": "Cron Daemon",
     "description": "Executes cron jobs from an external cron service via a URL",
-    "keywords": [],
-    "version": "1.0",
+    "keywords": ["cron"],
+    "version": "1.0.1",
     "humhub": {
         "minVersion": "1.6"
     },
@@ -16,5 +16,6 @@
         }
     ],
     "screenshots": [
+        "resources/screen_1.png"
     ]
 }

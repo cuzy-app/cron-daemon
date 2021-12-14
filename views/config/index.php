@@ -31,8 +31,8 @@ $module = Yii::$app->getModule('cron-daemon');
     <div class="panel-body">
         <h4><?= Yii::t('CronDaemonModule.config', '1) Set up an external cron job service') ?></h4>
         <p><?= Yii::t('CronDaemonModule.config', 'To execute the queued jobs, call the following URLs every minute by an external cron service such as {cronJobDotOrgLink}:', ['cronJobDotOrgLink' => '<a href="https://cron-job.org" target="_blank">cron-job.org</a>']) ?></p>
-        <div class="alert alert-info"><?= Url::to('/cron-daemon/external-service/run-queue', true) ?></div>
-        <div class="alert alert-info"><?= Url::to('/cron-daemon/external-service/run-cron', true) ?></div>
+        <div class="alert alert-info"><?= Url::to(['/cron-daemon/external-service/run-queue'], true) ?></div>
+        <div class="alert alert-info"><?= Url::to(['/cron-daemon/external-service/run-cron'], true) ?></div>
 
         <h4><?= Yii::t('CronDaemonModule.config', '2) Chek the cron jobs execution') ?></h4>
         <p><?= Button::primary(Yii::t('AdminModule.information', '<strong>CronJob</strong> Status'))->link('/admin/information/background-jobs') ?></p>

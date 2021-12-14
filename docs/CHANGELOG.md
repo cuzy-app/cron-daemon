@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.0.1 (December 14, 2021)
+--------------------
+- Fix: Now works if Pretty URLs is disabled
+
 1.0 (November 29, 2021)
 --------------------
 - Enh: Added config page

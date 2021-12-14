@@ -39,8 +39,6 @@ class Module extends \humhub\components\Module
      */
     public function getConfigUrl()
     {
-        return Url::to([
-            '/cron-daemon/config'
-        ]);
+        return Url::to(['/cron-daemon/config']);
     }
 }
