@@ -6,16 +6,18 @@
  * @author [Marc FARRE](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
  */
 
-use humhub\libs\Html;
+use humhub\modules\moduleModel\models\ModuleSettings;
+use humhub\modules\moduleModel\Module;
+use humhub\modules\ui\view\components\View;
 use humhub\widgets\Button;
 use yii\helpers\Url;
 
 /**
- * @var $this \humhub\modules\ui\view\components\View
- * @var $model \humhub\modules\moduleModel\models\ModuleSettings
+ * @var $this View
+ * @var $model ModuleSettings
  */
 
-/** @var \humhub\modules\moduleModel\Module $module */
+/** @var Module $module */
 $module = Yii::$app->getModule('cron-daemon');
 ?>
 

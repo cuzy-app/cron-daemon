@@ -23,20 +23,22 @@ class ExternalServiceController extends Controller
     {
         $queue = new Queue();
         $exitCode = $queue->run(0);
-        return !$exitCode ? $this->returnSuccess('Queue executed successfully!') : $this->returnError(500, 'Error on queue execution. Exit code: '.$exitCode);
+        return !$exitCode ? $this->returnSuccess('Queue executed successfully!') : $this->returnError(500, 'Error on queue execution. Exit code: ' . $exitCode);
     }
-
 
     /**
+     * Generates success response
+     *
+     * @param string $message
+     * @param int $statusCode
+     * @param array $additional
      * @return array
      */
-    public function actionRunCron()
+    protected function returnSuccess($message = 'Request successful', $statusCode = 200, $additional = [])
     {
-        $cronController = new CronController($this->id, $this->module);
-        $exitCode = $cronController->actionRun();
-        return !$exitCode ? $this->returnSuccess('Daily/hourly cron jobs executed successfully!') : $this->returnError(500, 'Error on daily/hourly cron jobs execution. Exit code: '.$exitCode);
+        Yii::$app->response->statusCode = $statusCode;
+        return array_merge(['code' => $statusCode, 'message' => $message], $additional);
     }
-
 
     /**
      * Generates error response
@@ -52,18 +54,13 @@ class ExternalServiceController extends Controller
         return array_merge(['code' => $statusCode, 'message' => $message], $additional);
     }
 
-
     /**
-     * Generates success response
-     *
-     * @param string $message
-     * @param int $statusCode
-     * @param array $additional
      * @return array
      */
-    protected function returnSuccess($message = 'Request successful', $statusCode = 200, $additional = [])
+    public function actionRunCron()
     {
-        Yii::$app->response->statusCode = $statusCode;
-        return array_merge(['code' => $statusCode, 'message' => $message], $additional);
+        $cronController = new CronController($this->id, $this->module);
+        $exitCode = $cronController->actionRun();
+        return !$exitCode ? $this->returnSuccess('Daily/hourly cron jobs executed successfully!') : $this->returnError(500, 'Error on daily/hourly cron jobs execution. Exit code: ' . $exitCode);
     }
 }
