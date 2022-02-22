@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.0.2 (February 22, 2022)
+--------------------
+- Fix: missing STDOUT and STDERR constants for non-cli php versions (thanks @quoing)
+
 1.0.1 (December 14, 2021)
 --------------------
 - Fix: Now works if Pretty URLs is disabled

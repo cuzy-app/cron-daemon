@@ -16,6 +16,22 @@ use yii\rest\Controller;
 
 class ExternalServiceController extends Controller
 {
+    public function init()
+    {
+        // fix missing constants for non-cli php versions (like php-fpm)
+        if (!defined('STDERR')) {
+            define('STDERR', fopen('php://stderr', 'wb'));
+        }
+        if (!defined('STDIN')) {
+            define('STDIN', fopen('php://stdin', 'rb'));
+        }
+        if (!defined('STDOUT')) {
+            define('STDOUT', fopen('php://stdout', 'wb'));
+        }
+
+        parent::init();
+    }
+
     /**
      * @return array
      */
