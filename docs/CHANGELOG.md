@@ -3,7 +3,7 @@ Changelog
 
 1.0.3 (March 7, 2022)
 --------------------
-- Enh: Added screenshots of an external cron service
+- Enh #1: Added screenshots of an external cron service
 
 1.0.2 (February 22, 2022)
 --------------------
