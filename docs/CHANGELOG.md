@@ -1,9 +1,13 @@
 Changelog
 =========
 
+1.0.3 (March 7, 2022)
+--------------------
+- Enh: Added screenshots of an external cron service
+
 1.0.2 (February 22, 2022)
 --------------------
-- Fix: missing STDOUT and STDERR constants for non-cli php versions (thanks @quoing)
+- Fix: Missing STDOUT and STDERR constants for non-cli php versions (thanks @quoing)
 
 1.0.1 (December 14, 2021)
 --------------------
