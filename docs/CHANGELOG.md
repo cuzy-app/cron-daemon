@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.0.4 (July 25, 2023)
+--------------------
+- Enh: Reworked config page
+
 1.0.3 (March 7, 2022)
 --------------------
 - Enh #1: Added screenshots of an external cron service

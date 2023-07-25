@@ -1,24 +1,26 @@
 {
-    "id": "cron-daemon",
-    "name": "Cron Daemon",
-    "description": "Executes cron jobs from an external cron service via a URL",
-    "keywords": ["cron"],
-    "version": "1.0.3",
-    "humhub": {
-        "minVersion": "1.6"
-    },
-    "homepage": "https://github.com/cuzy-app/humhub-modules-cron-daemon",
-    "authors": [
-        {
-            "name": "Marc FARRE",
-            "homepage": "https://marc.fun",
-            "role": "Developer"
-        }
-    ],
-    "screenshots": [
-        "resources/screen_1.png",
-        "resources/screen_2.png",
-        "resources/screen_3.png",
-        "resources/screen_4.png"
-    ]
+  "id": "cron-daemon",
+  "name": "Cron Daemon",
+  "description": "Executes cron jobs from an external cron service via a URL",
+  "keywords": [
+    "cron"
+  ],
+  "version": "1.0.4",
+  "humhub": {
+    "minVersion": "1.6"
+  },
+  "homepage": "https://github.com/cuzy-app/humhub-modules-cron-daemon",
+  "authors": [
+    {
+      "name": "Marc FARRE",
+      "homepage": "https://marc.fun",
+      "role": "Developer"
+    }
+  ],
+  "screenshots": [
+    "resources/screen_1.png",
+    "resources/screen_2.png",
+    "resources/screen_3.png",
+    "resources/screen_4.png"
+  ]
 }
