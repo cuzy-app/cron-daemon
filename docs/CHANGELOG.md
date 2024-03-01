@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.0.5 (March 1, 2024)
+--------------------
+- Enh: Added limitations in the README file
+- Enh: New logo
+
 1.0.4 (July 25, 2023)
 --------------------
 - Enh: Reworked config page
