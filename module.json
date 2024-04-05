@@ -9,7 +9,7 @@
   "humhub": {
     "minVersion": "1.6"
   },
-  "homepage": "https://github.com/cuzy-app/humhub-modules-cron-daemon",
+  "homepage": "https://github.com/cuzy-app/cron-daemon",
   "authors": [
     {
       "name": "Marc FARRE",

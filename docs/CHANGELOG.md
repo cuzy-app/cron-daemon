@@ -1,6 +1,11 @@
 Changelog
 =========
 
+Unreleased
+--------------------
+- Chg: Repository URL from https://github.com/cuzy-app/humhub-modules-cron-daemon
+  to https://github.com/cuzy-app/cron-daemon
+
 1.0.5 (March 1, 2024)
 --------------------
 - Enh: Added limitations in the README file

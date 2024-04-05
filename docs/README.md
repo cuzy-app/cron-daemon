@@ -18,11 +18,11 @@ This module should only be used on small HumHub instances where it is not possib
 
 This module is free, but is the result of a lot of work for the design and maintenance over time.
 
-If it's useful to you, please consider [making a donation](https://www.cuzy.app/checkout/donate/) or [participating in the code](https://github.com/cuzy-app/humhub-modules-cron-daemon). Thanks!
+If it's useful to you, please consider [making a donation](https://www.cuzy.app/checkout/donate/) or [participating in the code](https://github.com/cuzy-app/cron-daemon). Thanks!
 
 ## Repository
 
-https://github.com/cuzy-app/humhub-modules-cron-daemon
+https://github.com/cuzy-app/cron-daemon
 
 ## Publisher
 
@@ -30,4 +30,4 @@ https://github.com/cuzy-app/humhub-modules-cron-daemon
 
 ## Licence
 
-[GNU AGPL](https://github.com/cuzy-app/humhub-modules-cron-daemon/blob/master/docs/LICENCE.md)
+[GNU AGPL](https://github.com/cuzy-app/cron-daemon/blob/master/docs/LICENCE.md)
