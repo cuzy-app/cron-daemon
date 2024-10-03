@@ -3,8 +3,8 @@ Changelog
 
 Unreleased
 --------------------
-- Chg: Repository URL from https://github.com/cuzy-app/humhub-modules-cron-daemon
-  to https://github.com/cuzy-app/cron-daemon
+- Chg: Repository URL from https://github.com/cuzy-app/humhub-modules-cron-daemon to https://github.com/cuzy-app/cron-daemon
+- Enh: Add GitHub HumHub PHP workflows (tests & CS fixer)
 
 1.0.5 (March 1, 2024)
 --------------------
