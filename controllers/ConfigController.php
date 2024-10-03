@@ -10,7 +10,6 @@ namespace humhub\modules\cronDaemon\controllers;
 
 use humhub\modules\admin\components\Controller;
 
-
 class ConfigController extends Controller
 {
     /**

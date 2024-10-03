@@ -13,7 +13,6 @@ use Yii;
 use yii\queue\db\Queue;
 use yii\rest\Controller;
 
-
 class ExternalServiceController extends Controller
 {
     public function init()

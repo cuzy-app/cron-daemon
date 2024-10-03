@@ -8,7 +8,6 @@
 
 namespace humhub\modules\cronDaemon;
 
-
 use Yii;
 use yii\helpers\Url;
 
