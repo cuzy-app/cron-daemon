@@ -6,11 +6,11 @@
  * @author [Marc FARRE](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
  */
 
-use humhub\libs\Html;
+use humhub\components\View;
+use humhub\helpers\Html;
 use humhub\modules\moduleModel\models\Configuration;
 use humhub\modules\moduleModel\Module;
-use humhub\modules\ui\view\components\View;
-use humhub\widgets\Button;
+use humhub\widgets\bootstrap\Button;
 use yii\helpers\Url;
 
 /**
@@ -26,11 +26,11 @@ $module = Yii::$app->getModule('cron-daemon');
 
     <div class="panel-heading">
         <strong><?= $module->getName() ?></strong>
-        <div class="help-block"><?= $module->getDescription() ?></div>
+        <div class="text-body-secondary"><?= $module->getDescription() ?></div>
     </div>
 
     <div class="panel-body">
-        <div class="alert alert-info">
+        <div class="alert alert-info cuzy-free-module-info" role="alert">
             This module was created and is maintained by
             <a href="https://www.cuzy.app/"
                target="_blank">CUZY.APP (view other modules)</a>.

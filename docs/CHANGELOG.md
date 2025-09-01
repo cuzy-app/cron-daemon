@@ -1,8 +1,9 @@
 Changelog
 =========
 
-Unreleased
+1.1.0 (September 1, 2025)
 --------------------
+- Enh: Migration to Bootstrap 5 for HumHub 1.18
 - Chg: Repository URL from https://github.com/cuzy-app/humhub-modules-cron-daemon to https://github.com/cuzy-app/cron-daemon
 - Enh: Add GitHub HumHub PHP workflows (tests & CS fixer)
 
