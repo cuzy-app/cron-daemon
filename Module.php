@@ -18,11 +18,6 @@ class Module extends \humhub\components\Module
      */
     public $icon = 'tasks';
 
-    /**
-     * @var string defines path for resources, including the screenshots path for the marketplace
-     */
-    public $resourcesPath = 'resources';
-
     public function getName()
     {
         return 'Cron Daemon';

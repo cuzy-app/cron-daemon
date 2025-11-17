@@ -49,7 +49,7 @@ $module = Yii::$app->getModule('cron-daemon');
         <h4><?= Yii::t('CronDaemonModule.config', '1) Set up an external cron job service') ?></h4>
         <p><?= Yii::t('CronDaemonModule.config', 'To execute the queued jobs, call the following URLs every minute by an external cron service such as {cronJobDotOrgLink}:', ['cronJobDotOrgLink' => '<a href="https://cron-job.org" target="_blank">cron-job.org</a>']) ?></p>
 
-        <label class="control-label" for="queueRun">queue/run:</label>
+        <label class="form-label" for="queueRun">queue/run:</label>
         <?= Html::textInput(
             'queueRun',
             Url::to(['/cron-daemon/external-service/run-queue'], true),
@@ -59,7 +59,7 @@ $module = Yii::$app->getModule('cron-daemon');
             ]
         ) ?>
 
-        <label class="control-label" for="cronRun">cron/run:</label>
+        <label class="form-label" for="cronRun">cron/run:</label>
         <?= Html::textInput(
             'cronRun',
             Url::to(['/cron-daemon/external-service/run-cron'], true),
