@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Cron Daemon
  * @link https://github.com/cuzy-app/cron-daemon
