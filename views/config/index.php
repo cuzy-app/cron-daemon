@@ -71,6 +71,8 @@ $module = Yii::$app->getModule('cron-daemon');
         <br>
 
         <h4><?= Yii::t('CronDaemonModule.config', '2) Check the cron jobs execution') ?></h4>
-        <p><?= Button::primary(Yii::t('AdminModule.information', '<strong>CronJob</strong> Status'))->link(['/admin/information/background-jobs']) ?></p>
+        <p><?= Button::primary(Yii::t('AdminModule.information', '<strong>CronJob</strong> Status'))
+                ->encodeLabel(false)
+                ->link(['/admin/information/background-jobs']) ?></p>
     </div>
 </div>

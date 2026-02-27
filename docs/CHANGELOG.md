@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.1.1 (February 27, 2026)
+--------------------
+- Fix: Labels encoding (see [migration guide](https://github.com/humhub/humhub/blob/master/MIGRATE-DEV.md#version-1181))
+
 1.1.0 (September 1, 2025)
 --------------------
 - Enh: Migration to Bootstrap 5 for HumHub 1.18
