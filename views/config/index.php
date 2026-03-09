@@ -8,14 +8,12 @@
 
 use humhub\components\View;
 use humhub\helpers\Html;
-use humhub\modules\moduleModel\models\Configuration;
-use humhub\modules\moduleModel\Module;
+use humhub\modules\cronDaemon\Module;
 use humhub\widgets\bootstrap\Button;
 use yii\helpers\Url;
 
 /**
  * @var $this View
- * @var $model Configuration
  */
 
 /** @var Module $module */
