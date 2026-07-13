@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.2.0 (Unreleased)
+------------------
+- Fix: Compatibility with HumHub 1.19
+
 1.1.1 (February 27, 2026)
 --------------------
 - Fix: Labels encoding (see [migration guide](https://github.com/humhub/humhub/blob/master/MIGRATE-DEV.md#version-1181))

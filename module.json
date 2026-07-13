@@ -5,10 +5,10 @@
     "keywords": [
         "cron"
     ],
-    "version": "1.1.1",
+    "version": "1.2.0",
     "humhub": {
         "minVersion": "1.18.1",
-        "maxVersion": "1.18"
+        "maxVersion": "1.19"
     },
     "homepage": "https://github.com/cuzy-app/cron-daemon",
     "authors": [
