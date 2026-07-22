@@ -1,6 +1,11 @@
 {
   "name": "cuzy-app/cron-deamon",
   "type": "humhub-module",
+  "autoload": {
+    "psr-4": {
+      "humhub\\modules\\cronDaemon\\": ""
+    }
+  },
   "config": {
     "platform": {
       "php": "8.2"
