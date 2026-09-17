@@ -30,4 +30,4 @@ https://github.com/cuzy-app/cron-daemon
 
 ## Licence
 
-[GNU AGPL](https://github.com/cuzy-app/cron-daemon/blob/master/docs/LICENCE.md)
+[GNU AGPL](https://github.com/cuzy-app/cron-daemon/blob/main/docs/LICENCE.md)

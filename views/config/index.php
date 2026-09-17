@@ -2,7 +2,7 @@
 /**
  * Cron Daemon
  * @link https://github.com/cuzy-app/cron-daemon
- * @license https://github.com/cuzy-app/cron-daemon/blob/master/docs/LICENCE.md
+ * @license https://github.com/cuzy-app/cron-daemon/blob/main/docs/LICENCE.md
  * @author [Marc FARRE](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
  */
 
