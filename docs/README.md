@@ -26,7 +26,7 @@ https://github.com/cuzy-app/cron-daemon
 
 ## Publisher
 
-[CUZY.APP](https://www.cuzy.app/)
+[CUZY.app](https://www.cuzy.app)
 
 ## Licence
 

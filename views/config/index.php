@@ -3,7 +3,7 @@
  * Cron Daemon
  * @link https://github.com/cuzy-app/cron-daemon
  * @license https://github.com/cuzy-app/cron-daemon/blob/master/docs/LICENCE.md
- * @author [Marc FARRE](https://marc.fun) for [CUZY.APP](https://www.cuzy.app)
+ * @author [Marc FARRE](https://marc.fun) for [CUZY.app](https://www.cuzy.app)
  */
 
 use humhub\components\View;
@@ -31,7 +31,7 @@ $module = Yii::$app->getModule('cron-daemon');
         <div class="alert alert-info cuzy-free-module-info" role="alert">
             This module was created and is maintained by
             <a href="https://www.cuzy.app/"
-               target="_blank">CUZY.APP (view other modules)</a>.
+               target="_blank">CUZY.app (view other modules)</a>.
             <br>
             It's free, but it's the result of a lot of design and maintenance work over time.
             <br>
